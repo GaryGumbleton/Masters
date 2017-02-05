@@ -95,6 +95,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Band.html" />
+    <Content Include="images\ani-logo.jpg" />
+    <Content Include="images\belfastOffice.jpg" />
+    <Content Include="images\derryOffice.jpg" />
+    <Content Include="images\strabaneOffice.jpg" />
     <Content Include="Main.html" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
@@ -141,6 +145,7 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
