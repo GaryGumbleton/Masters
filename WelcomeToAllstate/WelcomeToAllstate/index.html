@@ -11,7 +11,58 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.24/browser.min.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-router/2.4.0/ReactRouter.min.js"></script>
+
     <link rel="stylesheet" type="text/css" href="StyleSheet.css">
+
+
+    <script type="text/babel">
+        var Belfast = React.createClass({
+            render: function () {
+                return (
+                    <div>
+                        <h3>Belfast</h3>
+                        <p>The first office was based at 39 Corporation Street in Belfast. The growth of the company necessitated a move to the current headquarters at 9 Lanyon Place, in the heart of Belfast, with room for over 1000 employees. Belfast is an excellent location with a good infrastructure, including transport and communication links, Allstate NI employees can be in Chicago within 12 hours, door to door.</p>
+                    </div>
+                )
+            }
+        })
+        React.render(<Belfast />, document.getElementById('Belfast'));
+    </script>
+
+    <script type="text/babel">
+        var Northland = React.createClass({
+            render: function () {
+                return (
+                    <div>
+                        <h3>Northland</h3>
+                        <p>The Allstate NI Derry Office was opened in 2001. L'Derry was a prime location due to the number of high calibre IT graduates from the University of Ulster campus which has one of the largest IT faculties in the UK. Due to this steady stream of graduates the office has grown rapidly and now has over 350 employees working in Derry out of its new office location in the Springtown Business Park.</p>
+                    </div>
+                )
+            }
+        })
+        React.render(<Northland />, document.getElementById('Northland'));
+    </script>
+
+    <script type="text/babel">
+        var Strabane = React.createClass({
+            render: function () {
+                return (
+                    <div>
+                        <h3>Strabane</h3>
+                        <p>Allstate Northern Ireland opened its Strabane location in 2004 after piloting a very successful business process outsourcing and call centre operation out of its Belfast office.</p>
+                    </div>
+                )
+            }
+        })
+        React.render(<Strabane />, document.getElementById('Strabane'));
+    </script>
+
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
     <!--Nav Bar -->
@@ -48,24 +99,21 @@
             <div class="item active">
                 <img src="images/belfastOffice.jpg" alt="Belfast" width="1200" height="700">
                 <div class="carousel-caption">
-                    <h3>Belfast</h3>
-                    <p>The first office was based at 39 Corporation Street in Belfast. The growth of the company necessitated a move to the current headquarters at 9 Lanyon Place, in the heart of Belfast, with room for over 1000 employees. Belfast is an excellent location with a good infrastructure, including transport and communication links, Allstate NI employees can be in Chicago within 12 hours, door to door.</p>
+                    <div id="Belfast"></div>
                 </div>
             </div>
 
             <div class="item">
                 <img src="images/derryOffice.jpg" alt="Northland" width="1200" height="700">
                 <div class="carousel-caption">
-                    <h3>Northland</h3>
-                    <p>The Allstate NI Derry Office was opened in 2001. L'Derry was a prime location due to the number of high calibre IT graduates from the University of Ulster campus which has one of the largest IT faculties in the UK. Due to this steady stream of graduates the office has grown rapidly and now has over 350 employees working in Derry out of its new office location in the Springtown Business Park.</p>
+                    <div id="Northland"></div>                    
                 </div>
             </div>
 
             <div class="item">
                 <img src="images/strabaneOffice.jpg" alt="Strabane" width="1200" height="700">
                 <div class="carousel-caption">
-                    <h3>Strabane</h3>
-                    <p>Allstate Northern Ireland opened its Strabane location in 2004 after piloting a very successful business process outsourcing and call centre operation out of its Belfast office.</p>
+                    <div id="Strabane"></div>
                 </div>
             </div>
         </div>
