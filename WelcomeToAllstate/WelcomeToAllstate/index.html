@@ -268,6 +268,76 @@
         React.render(<MandatoryFriday />, document.getElementById('MandatoryFriday'));
     </script>
 
+    <script type="text/babel">
+        var AvailableCourses = React.createClass({
+            render: function () {
+                return (
+                     <div className="container">
+                        <h3 className="text-center">Available Courses</h3>
+                        <p className="text-center">
+                            Below is details of current courses available from the L&D Team
+                            <br/>
+                            If any of them interest you you can book them <a href="#applycourse">below</a>
+                        </p>
+                        <div className="row text-center">
+                            <div className="col-sm-4">
+                                <div className="thumbnail">
+                                    <p><strong>Course 1</strong></p>
+                                    <p>Friday 24 Feburary 2017</p>
+                                    <p>9 to 5</p>
+                                    <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#myModal" data-title="Course 1">More Details</button>
+                                </div>
+                            </div>
+                            <div className="col-sm-4">
+                                <div className="thumbnail">
+                                    <p><strong>Course 2</strong></p>
+                                    <p>Friday 24 June 2017</p>
+                                    <p>9 to 5</p>
+                                    <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#myModal" data-title="Course 2">More Details</button>
+                                </div>
+                            </div>
+                            <div className="col-sm-4">
+                                <div className="thumbnail">
+                                    <p><strong>Course 3</strong></p>
+                                    <p>Thursday 23 June 2017</p>
+                                    <p>9 to 5</p>
+                                    <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#myModal" data-title="Course 3">More Details</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="row text-center">
+                            <div className="col-sm-4">
+                                <div className="thumbnail">
+                                    <p><strong>Course 4</strong></p>
+                                    <p>Friday 24 Feburary 2017</p>
+                                    <p>9 to 5</p>
+                                    <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#myModal" data-title="Course 4">More Details</button>
+                                </div>
+                            </div>
+                            <div className="col-sm-4">
+                                <div className="thumbnail">
+                                    <p><strong>Course 5</strong></p>
+                                    <p>Friday 24 June 2017</p>
+                                    <p>9 to 5</p>
+                                    <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#myModal" data-title="Course 5">More Details</button>
+                                </div>
+                            </div>
+                            <div className="col-sm-4">
+                                <div className="thumbnail">
+                                    <p><strong>Course 6</strong></p>
+                                    <p>Thursday 23 June 2017</p>
+                                    <p>9 to 5</p>
+                                    <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#myModal" data-title="Course 6">More Details</button>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                )
+            }
+        })
+        React.render(<AvailableCourses />, document.getElementById('AvailableCourses'));
+    </script>
+
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
     <!--Nav Bar -->
@@ -365,67 +435,10 @@
     </div>
         <!-- Container available Courses -->
         <div id="availableCourses" class="bg-1">
-            <div class="container">
-                <h3 class="text-center">Available Courses</h3>
-                <p class="text-center">
-                    Below is details of current courses available from the L&D Team
-                    <br>
-                    If any of them interest you you can book them <a href="#applycourse">below</a>
-                </p>
-                <div class="row text-center">
-                    <div class="col-sm-4">
-                        <div class="thumbnail">
-                            <p><strong>Course 1</strong></p>
-                            <p>Friday 24 Feburary 2017</p>
-                            <p>9 to 5</p>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-title="Course 1">More Details</button>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="thumbnail">
-                            <p><strong>Course 2</strong></p>
-                            <p>Friday 24 June 2017</p>
-                            <p>9 to 5</p>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-title="Course 2">More Details</button>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="thumbnail">
-                            <p><strong>Course 3</strong></p>
-                            <p>Thursday 23 June 2017</p>
-                            <p>9 to 5</p>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-title="Course 3">More Details</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="row text-center">
-                    <div class="col-sm-4">
-                        <div class="thumbnail">
-                            <p><strong>Course 4</strong></p>
-                            <p>Friday 24 Feburary 2017</p>
-                            <p>9 to 5</p>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-title="Course 4">More Details</button>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="thumbnail">
-                            <p><strong>Course 5</strong></p>
-                            <p>Friday 24 June 2017</p>
-                            <p>9 to 5</p>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-title="Course 5">More Details</button>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="thumbnail">
-                            <p><strong>Course 6</strong></p>
-                            <p>Thursday 23 June 2017</p>
-                            <p>9 to 5</p>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-title="Course 6">More Details</button>
-                        </div>
-                    </div>
-                </div>
+           
+                <div id="AvailableCourses"></div>
 
-            </div>
+            
 
             <!-- Modal -->
             <div id="myModal" class="modal fade">
